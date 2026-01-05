@@ -1,54 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>LVIN AI – Official Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official website for LVIN AI, a private desktop application used for internal testing with TikTok APIs.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LVINAI — AI Video Creation & TikTok Publishing Platform</title>
+  <meta name="description" content="LVINAI is a public AI-powered platform that helps users create and publish short-form videos to TikTok with explicit user consent." />
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; }
-    h1, h2 { color: #111; }
-    a { color: #0066cc; text-decoration: none; }
-    .note { padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa; }
-    footer { margin-top: 50px; font-size: 14px; color: #555; }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#0b0c10;color:#e6e6e6;line-height:1.55}
+    a{color:#6ee7ff;text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:22px}
+    .nav{position:sticky;top:0;background:rgba(11,12,16,.92);border-bottom:1px solid #23263a}
+    .navin{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:900;letter-spacing:.4px}
+    .links a{margin-left:14px}
+    .card{background:#11131a;border:1px solid #23263a;border-radius:14px;padding:20px;margin-top:18px}
+    .badge{display:inline-block;border:1px solid #23263a;padding:6px 10px;border-radius:999px;color:#aab0c0;font-size:13px}
+    h1{font-size:36px;margin:10px 0}
+    h2{margin-top:0}
+    .muted{color:#aab0c0}
+    .btn{display:inline-block;background:#6ee7ff;color:#041016;padding:10px 14px;border-radius:12px;font-weight:800}
+    .btn.secondary{background:none;border:1px solid #23263a;color:#6ee7ff}
+    ul{margin-left:18px}
+    .footer{margin-top:26px;padding-top:18px;border-top:1px solid #23263a;color:#aab0c0;font-size:14px}
   </style>
 </head>
 <body>
 
-<h1>LVIN AI – Official Website</h1>
+<header class="nav">
+  <div class="wrap navin">
+    <div class="brand">LVINAI</div>
+    <nav class="links">
+      <a href="how-it-works.html">How It Works</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="data-deletion.html">Data Deletion</a>
+    </nav>
+  </div>
+</header>
 
-<p class="note">
-LVIN AI is a <strong>private desktop application</strong> used for <strong>internal testing</strong> and personal automation workflows.
-It is not a public product and is not intended for third-party use.
-</p>
+<main class="wrap">
+  <div class="card">
+    <span class="badge">Public product • User consent required • Official TikTok OAuth</span>
+    <h1>LVINAI helps you create and publish videos to TikTok</h1>
+    <p class="muted">
+      LVINAI is a public AI-powered content creation platform designed for creators and teams.
+      Videos are published to TikTok only after the user explicitly approves the action.
+    </p>
+    <div style="margin-top:14px">
+      <a class="btn" href="how-it-works.html">View Workflow</a>
+      <a class="btn secondary" href="support.html">Contact Support</a>
+    </div>
+  </div>
 
-<h2>What the app does</h2>
-<p>
-LVIN AI helps automate parts of a video publishing workflow and is used by the developer for testing and development.
-</p>
+  <div class="card">
+    <h2>TikTok API Usage</h2>
+    <ul>
+      <li><strong>OAuth Login:</strong> User signs in with their TikTok account</li>
+      <li><strong>Basic Profile Info:</strong> Used to display the connected account</li>
+      <li><strong>Content Posting:</strong> Videos are posted only after user confirmation</li>
+    </ul>
+    <p class="muted">
+      LVINAI never publishes content automatically or without the user’s knowledge.
+    </p>
+  </div>
 
-<h2>TikTok API usage</h2>
-<ul>
-  <li>Authentication of the developer’s own TikTok account</li>
-  <li>Testing content-related automation features</li>
-</ul>
+  <footer class="footer">
+    <div>Support: <a href="mailto:imperflyazerbaijan@gmail.com">imperflyazerbaijan@gmail.com</a></div>
+    <div>© <span id="y"></span> LVINAI</div>
+  </footer>
+</main>
 
-<h2>Privacy</h2>
-<p>
-The app does not collect or store personal data from other users. API access is limited to the developer’s own account for internal testing.
-</p>
-<p>
-<a href="privacy-policy.html">Privacy Policy</a>
-</p>
-
-<h2>Contact</h2>
-<p>
-Support Email: <strong>imperflyazerbaijan@gmail.com</strong>
-</p>
-
-<footer>
-  <p>© 2025 LVIN AI</p>
-</footer>
-
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
